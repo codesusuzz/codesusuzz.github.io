@@ -6,38 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task management @susu</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@600;800;900&display=swap" rel="stylesheet">
+
+</head>
 
 <body>
     <div id="container">
         <div id="header">
             <!-- greeting -->
             <form id="loginForm">
-                <input type="text" id="loginInput" placeholder="Type your name !">
+                <input type="text" id="loginInput" placeholder="Type your name">
                 <input type="submit" value="GO" class="gobtn">
             </form>
             <div id="greeting" class="hidden"></div>
-            <button id="logoutbtn" type="button" class="hidden btn">Log out</button>
+            <button id="logoutbtn" type="button" class="hidden outbtn">Log out</button>
         </div>
         <div id="content">
-            <!-- weather -->
-            <h2 id="weather">
-                <span></span>
-                <span></span>
-            </h2>
-          <button id="mood" class="btn" type="button">Change the mood</button>    
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+            <button id="mood" class="btn" type="button">Color ?</button>    
+            <p>It changes background color randomly XD</p>
+
+            <button id="eeveeBtn" type="button"></button>   
+            <span id="eevee" class="randomEevee"></span>
         </div>
 
         <div id="sidebar">
-            <h2 id="clock">00:00:00</h2>
+            <div id="location">🇰🇷 KST (UTC +9)</div>
+            <div id="clock">00:00:00</div>
+            <!-- weather -->
+            <h2 id="weather">
+                <span></span>
+            </h2>
             <!-- To-Do list -->
             <form id="todo-form">
                 <input id=todoinput type="text" placeholder="Write your To-do list here" required>
             </form>
-            <ul id="todo-list"></ul>
+            <ul id="todo-list" class="ast-content-ul-list"></ul>
         </div>
 
-        <div id="footer"></div>
       </div>
 
 
@@ -48,6 +55,7 @@
     <script src="js/todolist.js"></script>
     <script src="js/login.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/randomEevee.js"></script>
 
 </body>
 </html>

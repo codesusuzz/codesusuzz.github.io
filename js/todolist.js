@@ -17,7 +17,8 @@ function deleteTodo(event){
 
 function paintToDo(todoObj) {
     const li = document.createElement("li");
-    li.id = todoObj.id; // 이부분 예제랑 다른데.. 걍 내가 임의로 고쳤음
+    li.classList.add("listdesign");
+    li.id = todoObj.id;
     const span = document.createElement("span");
     span.innerText = todoObj.text;
     const button = document.createElement("button");

@@ -4,6 +4,7 @@ body {
     height: 100%;
 }
 
+
 #container {
     width: 940px;
     height: 100%;
@@ -13,11 +14,53 @@ body {
 
 #header {
     padding: 20px;
+    color: whitesmoke;
     margin-bottom: 20px;
     text-align: center;
     align-items: center;
     font-size: 50px;
     font-family: Century Gothic, sans-serif;
+}
+
+/* Unordered list style */ 
+.entry-content ul.ast-content-ul-list {
+    margin-left:1.4em;
+ }
+ .entry-content ul.ast-content-ul-list li {
+    position: relative;
+    padding-left: 30px;
+    list-style: none; 
+ }
+ .entry-content ul.ast-content-ul-list li:after{
+    position: absolute;
+    top: -webkit-calc( 50% - -1px);
+    top: calc( 50% - -1px);
+    left: 0;   width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding-top: 2px;
+    color: #fff;
+    text-align:center;
+    background-color: gray;
+    content: "\e900";
+    font-size: 10px;
+    font-family: 'Biryani', sans-serif;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); 
+ } 
+
+#greeting {
+    font-family: 'Biryani', sans-serif;
+    font-size: 50px;
+}
+
+#weather {
+    font-family: 'Biryani', sans-serif;
+    font-size: 20px;
+    color: ghostwhite;
 }
 
 #content {
@@ -28,6 +71,7 @@ body {
 }
 
 #todoinput {
+    color: whitesmoke;
     width: 300px;
     height: 50px;
     background-color: transparent;
@@ -39,14 +83,30 @@ body {
 
 #sidebar {
     width: 260px;
+    height: 600px;
     padding: 20px;
     margin-bottom: 20px;
     float: right;
+    color: whitesmoke;
+    white-space: nowrap;
 }
 
-#footer {
-    clear: both;
-    padding: 20px;
+#clock {
+    color: ghostwhite;
+    font-family: 'Biryani', sans-serif;
+    font-size: 50px;
+}
+
+#eeveeBtn {
+    background-image: url("img/이브이.png") no-repeat;
+    color: transparent;
+    width: 100px;
+    height: 100px;
+}
+
+.randomEevee {
+    width: 25px;
+    float: left;
 }
 
 #loginInput {
@@ -60,35 +120,37 @@ body {
 }
 
 .btn {
+    align-content: center;
+    color: whitesmoke;
     width: 200px;
-    height: 50px;
-    background-color: transparent;
+    height: 40px;
+    color: gray;
+    background-color: white;
+    opacity: 40%;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.outbtn {
+    align-content: center;
+    color: whitesmoke;
+    width: 140px;
+    height: 40px;
+    color: gray;
+    background-color: white;
+    opacity: 20%;
     border: 2px solid white;
     border-radius: 10px;
 }
 
 .gobtn {
     width: 50px;
-    height: 50px;
-    background-color: transparent;
+    height: 30px;
+    color: gray;
+    background-color: white;
+    opacity: 40%;
     border: 2px solid white;
     border-radius: 10px;
-}
-
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-#clock {
-    font-family: Century Gothic, sans-serif;
-    font-size: 70px;
-}
-
-#weather {
-    font-size: 20px;
 }
 
 .hidden {

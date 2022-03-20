@@ -17,7 +17,8 @@ function randomColor() {
     const secondColor = colors[Math.floor(Math.random() * len)];
 
     const bg = document.querySelector("body");
-    bg.style.background = `linear-gradient(to top, ${firstColor}, ${secondColor}) no-repeat`;
+    bg.style.background = `linear-gradient(to top, ${firstColor}, ${secondColor}) no-repeat`
+    bg.classList.add("bodystyle");
 }
 
 randomColor();

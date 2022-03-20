@@ -13,7 +13,8 @@ function onGeoOK(position) {
         const city = data.name;
         const temp = data.main.temp;
         const weat = data.weather[0].main;
-        weather.innerText = `📍 ${city} 기준 ${temp}°C, ${weat}`
+        weather.innerText = `📍 ${city}
+        ${temp}°C, ${weat}`;
     })
 }
 
