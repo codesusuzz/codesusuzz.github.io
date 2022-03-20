@@ -54,6 +54,7 @@ body {
 
 #greeting {
     font-family: 'Biryani', sans-serif;
+    font-weight: 800;
     font-size: 50px;
 }
 
@@ -83,7 +84,7 @@ body {
 
 #sidebar {
     width: 260px;
-    height: 600px;
+    height: 1000px;
     padding: 20px;
     margin-bottom: 20px;
     float: right;

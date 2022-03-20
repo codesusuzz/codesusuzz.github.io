@@ -8,12 +8,13 @@ const eevees = ["샤미드",
                 "에브이",
             ];
 
-const chosenEevee = document.createElement("img");
-document.querySelector(".randomEevee").appendChild = chosenEevee;
+
 
 function choseEevee() {
     const randomEevee = eevees[Math.floor(Math.random() * eevees.length)];
     chosenEevee.src = `img/${randomEevee}.webp`;
+    const chosenEevee = document.createElement("img");
+    document.querySelector(".randomEevee").appendChild = chosenEevee;   
 }
 
 const eeveeBtn = document.querySelector("#eeveeBtn");
