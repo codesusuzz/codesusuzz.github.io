@@ -7,9 +7,11 @@ body {
 
 #container {
     width: 940px;
-    height: 100%;
+    height: 1200px;
     margin: 0px auto;
     padding: 20px;
+    align-items: center;
+    text-align: center;
   }
 
 #header {
@@ -22,39 +24,9 @@ body {
     font-family: Century Gothic, sans-serif;
 }
 
-/* Unordered list style */ 
-.entry-content ul.ast-content-ul-list {
-    margin-left:1.4em;
- }
- .entry-content ul.ast-content-ul-list li {
-    position: relative;
-    padding-left: 30px;
-    list-style: none; 
- }
- .entry-content ul.ast-content-ul-list li:after{
-    position: absolute;
-    top: -webkit-calc( 50% - -1px);
-    top: calc( 50% - -1px);
-    left: 0;   width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    padding-top: 2px;
-    color: #fff;
-    text-align:center;
-    background-color: gray;
-    content: "\e900";
-    font-size: 10px;
-    font-family: 'Biryani', sans-serif;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg); 
- } 
-
 #greeting {
     font-family: 'Biryani', sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 50px;
 }
 
@@ -62,34 +34,32 @@ body {
     font-family: 'Biryani', sans-serif;
     font-size: 20px;
     color: ghostwhite;
+    font-weight: 100;
 }
 
 #content {
-    width: 580px;
-    padding: 20px;
-    margin-bottom: 20px;
-    float: left;
+    margin: 0 auto;
+    width:400px;
 }
 
+
 #todoinput {
-    color: whitesmoke;
     width: 300px;
-    height: 50px;
+    height: 30px;
+    color: grey;
     background-color: transparent;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
 }
 
-#sidebar {
-    width: 260px;
-    height: 1000px;
-    padding: 20px;
-    margin-bottom: 20px;
-    float: right;
-    color: whitesmoke;
-    white-space: nowrap;
+li {
+    list-style: none;
+    background-color: tramsparent;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 30px;
 }
 
 #clock {
@@ -98,16 +68,18 @@ body {
     font-size: 50px;
 }
 
-#eeveeBtn {
-    background-image: url("img/이브이.png") no-repeat;
-    color: transparent;
-    width: 100px;
-    height: 100px;
+#location {
+    color: white;
+    font-family: 'Biryani', sans-serif;
+    font-size: large;
 }
 
-.randomEevee {
-    width: 25px;
-    float: left;
+.delBtn {
+    color: grey;
+    background-color: transparent;
+    border: 0px;
+    margin-left: 10px;
+    opacity: 100%;
 }
 
 #loginInput {
@@ -117,11 +89,16 @@ body {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid white;
+    border-bottom: 4px solid white;
+}
+.todo-title {
+    color: white;
+    font-family: 'Biryani', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
 }
 
 .btn {
-    align-content: center;
     color: whitesmoke;
     width: 200px;
     height: 40px;
@@ -139,7 +116,7 @@ body {
     height: 40px;
     color: gray;
     background-color: white;
-    opacity: 20%;
+    opacity: 40%;
     border: 2px solid white;
     border-radius: 10px;
 }

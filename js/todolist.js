@@ -17,12 +17,13 @@ function deleteTodo(event){
 
 function paintToDo(todoObj) {
     const li = document.createElement("li");
-    li.classList.add("listdesign");
+    li.classList.add("list");
     li.id = todoObj.id;
     const span = document.createElement("span");
     span.innerText = todoObj.text;
     const button = document.createElement("button");
-    button.innerText = " X ";
+    button.innerText = "✅";
+    button.classList.add("delBtn");
     button.addEventListener("click", deleteTodo);
     li.appendChild(span);
     li.appendChild(button);

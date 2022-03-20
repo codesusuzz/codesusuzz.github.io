@@ -14,7 +14,7 @@ function onGeoOK(position) {
         const temp = data.main.temp;
         const weat = data.weather[0].main;
         weather.innerText = `📍 ${city}
-        ${temp}°C, ${weat}`;
+         ${temp}°C, ${weat}`;
     })
 }
 
